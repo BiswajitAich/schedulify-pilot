@@ -1,0 +1,81 @@
+.loginContainer {
+  width: 100%;
+  max-width: 480px;
+  background: white;
+  padding: 2rem;
+  border-radius: 12px;
+  box-shadow: 0 0 15px rgba(0, 5, 51, 0.15);
+}
+
+.loginForm fieldset {
+  border: 1px solid var(--accent);
+  padding: 1.4rem;
+  border-radius: 10px;
+}
+
+.loginForm legend {
+  padding: 0 0.8rem;
+  font-weight: 600;
+  color: var(--accent);
+}
+
+.inputGroup {
+  margin-bottom: 1.3rem;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+
+.inputGroup label {
+  margin-bottom: 0.4rem;
+  font-size: 0.95rem;
+  color: var(--foreground);
+}
+
+.inputGroup input {
+  padding: 0.7rem;
+  border-radius: 6px;
+  border: 1px solid var(--accent);
+  background: var(--background);
+  outline: none;
+  font-size: 1rem;
+}
+
+.inputGroup input:focus {
+  border-color: var(--background2);
+}
+
+.showHideButton {
+  cursor: pointer;
+  background: none;
+  border: none;
+  right: 0;
+  position: absolute;
+  bottom: 0;
+}
+
+.submitButton {
+  width: 100%;
+  padding: 0.8rem;
+  border: none;
+  border-radius: 8px;
+  background: var(--accent);
+  color: white;
+  font-weight: 600;
+  cursor: pointer;
+  font-size: 1rem;
+  margin-top: 0.5rem;
+  transition: 0.2s ease;
+}
+
+.submitButton:hover {
+  background: var(--background2);
+  color: var(--foreground);
+}
+
+.errorMessage {
+  margin-top: 1rem;
+  text-align: center;
+  color: var(--accent-error);
+  font-weight: 600;
+}

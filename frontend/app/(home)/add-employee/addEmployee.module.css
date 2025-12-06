@@ -1,0 +1,119 @@
+.addEmployeeContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  background-color: var(--background);
+  padding: 2rem;
+}
+
+.addEmployeeForm {
+  width: 100%;
+  max-width: 480px;
+  background: white;
+  border-radius: 12px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  padding: 2rem;
+}
+
+.addEmployeeForm fieldset {
+  border: 2px solid var(--accent);
+  border-radius: 8px;
+  padding: 1.5rem;
+}
+
+.addEmployeeForm legend {
+  color: var(--accent);
+  font-size: 1.5rem;
+  font-weight: 600;
+  padding: 0 0.5rem;
+}
+
+.inputGroup {
+  position: relative;
+  margin-bottom: 1.5rem;
+}
+
+.inputGroup label {
+  display: block;
+  color: var(--foreground);
+  font-size: 0.9rem;
+  font-weight: 500;
+  margin-bottom: 0.5rem;
+  text-transform: lowercase;
+}
+
+.inputGroup input {
+  width: 100%;
+  padding: 0.75rem;
+  border: 1px solid #d1d5db;
+  border-radius: 6px;
+  font-size: 1rem;
+  transition: border-color 0.2s;
+  box-sizing: border-box;
+}
+
+.inputGroup input:focus {
+  outline: none;
+  border-color: var(--background2);
+}
+
+.inputGroup input::placeholder {
+  color: #9ca3af;
+  text-transform: lowercase;
+}
+
+.showHideButton {
+  cursor: pointer;
+  background: none;
+  border: none;
+  position: absolute;
+  right: 0;
+}
+
+.showHideButton:hover {
+  opacity: 0.7;
+}
+
+.submitButton {
+  width: 100%;
+  padding: 0.875rem;
+  background-color: var(--accent);
+  color: white;
+  border: none;
+  border-radius: 6px;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.2s;
+  margin-top: 0.5rem;
+}
+
+.submitButton:hover {
+  background-color: rgba(0, 5, 51, 0.85);
+}
+
+.submitButton:active {
+  transform: scale(0.98);
+}
+
+.msg {
+  margin-top: 1rem;
+  padding: 0.75rem;
+  color: white;
+  border-radius: 6px;
+  text-align: center;
+  font-size: 0.9rem;
+  font-weight: 600;
+}
+
+.successMessage {
+  margin-top: 1rem;
+  padding: 0.75rem;
+  background-color: var(--accent-success);
+  color: white;
+  border-radius: 6px;
+  text-align: center;
+  font-size: 0.9rem;
+}

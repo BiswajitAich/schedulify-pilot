@@ -1,0 +1,72 @@
+.dashBoardElements {
+  display: flex;
+  flex-direction: column;
+  min-height: 100dvh;
+  padding: max(5%, 1rem);
+  padding-top: 1.5rem;
+}
+
+.p1 {
+  text-transform: capitalize;
+  font-size: xx-large;
+  font-weight: 700;
+  color: var(--accent);
+  position: relative;
+}
+.p1 span {
+  color: #192ca27a;
+  font-size: small;
+}
+
+.addContainer {
+  position: absolute;
+  top: 0;
+  right: 0;
+  display: inline-flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+
+.add,
+.addEmployee,
+.addShifts {
+  padding: 0.5rem 1rem;
+  border-radius: 8px;
+  border: none;
+  background: var(--background2);
+  font-size: small;
+  font-weight: 700;
+  text-transform: capitalize;
+  box-shadow: 1px 1px 4px var(--foreground);
+  cursor: pointer;
+}
+
+.add:hover,
+.addEmployee:hover,
+.addShifts:hover {
+  background-color: #a6e7fd;
+}
+
+.add {
+  font-size: 2rem;
+  font-weight: 100;
+  width: 40px;
+  height: 40px;
+  padding: 0;
+  margin: 0;
+  align-items: center;
+  text-align: center;
+}
+
+.addLinks {
+  display: inline-flex;
+  flex-direction: column;
+  padding-top: 1rem;
+  gap: 8px;
+  position: fixed;
+  top: 60px;
+  border-right: 1px solid black;
+  border-bottom-right-radius: 8px;
+  box-shadow: 12px 12px 10px;
+  z-index: 1;
+}

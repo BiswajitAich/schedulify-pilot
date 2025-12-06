@@ -1,0 +1,27 @@
+.authContainer {
+  width: 100%;
+  min-height: 100vh;
+  background: var(--background);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem;
+}
+
+.toggleButton {
+  margin-top: 1.5rem;
+  padding: 0.6rem 1.3rem;
+  border-radius: 6px;
+  border: none;
+  cursor: pointer;
+  background: var(--accent);
+  color: white;
+  font-weight: 600;
+  transition: 0.2s ease;
+}
+
+.toggleButton:hover {
+  background: var(--background2);
+  color: var(--foreground);
+}

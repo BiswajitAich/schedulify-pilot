@@ -1,0 +1,37 @@
+.sidebar {
+  background: var(--background2);
+  display: flex;
+  row-gap: 0.8rem;
+  min-height: 100dvh;
+  flex-direction: column;
+  transition: all ease 0.3s;
+  overflow: hidden;
+  position: relative;
+}
+.open {
+  min-width: 300px;
+  padding: 1.5rem 1rem 1rem 1.6rem;
+}
+
+.close {
+  max-width: 50px;
+  padding: 0.2rem;
+}
+.toggle {
+  border: none;
+  width: 40px;
+  height: 40px;
+  border-radius: 8px;
+  cursor: w-resize;
+  background: #00000000;
+}
+.toggle:hover {
+  filter: drop-shadow(0 0 4px black);
+  background: #00000000;
+}
+.p1 {
+  text-transform: capitalize;
+  font-size: xx-large;
+  font-weight: 700;
+  color: var(--accent);
+}
