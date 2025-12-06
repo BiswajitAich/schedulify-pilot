@@ -5,7 +5,7 @@ export async function POST(req: NextRequest) {
     const { firstname, lastname, email, password, department } =
       await req.json();
     const res = await fetch(
-      `${process.env.BACKEND_API}users/v1/add-employee/`,
+      `${process.env.BACKEND_API}/users/v1/add-employee/`,
       {
         method: "POST",
         headers: {

@@ -3,7 +3,7 @@ import { NextResponse } from "next/server";
 export async function GET() {
   try {
     const res = await fetch(
-      `${process.env.BACKEND_API}users/v1/get-employee-list/`,
+      `${process.env.BACKEND_API}/users/v1/get-employee-list/`,
       {
         method: "GET",
         headers: {

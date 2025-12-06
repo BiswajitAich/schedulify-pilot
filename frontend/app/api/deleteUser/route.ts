@@ -5,7 +5,7 @@ export async function DELETE(req: NextRequest) {
     const { id } = await req.json();
 
     const res = await fetch(
-      `${process.env.BACKEND_API}users/v1/delete-user/`,
+      `${process.env.BACKEND_API}/users/v1/delete-user/`,
       {
         method: "DELETE",
         headers: {

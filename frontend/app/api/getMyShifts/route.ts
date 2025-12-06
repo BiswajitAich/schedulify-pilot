@@ -12,7 +12,7 @@ export async function GET(req: Request) {
       });
     }
     const res = await fetch(
-      `${process.env.BACKEND_API}shifts/v1/get-my-shifts/${employeeId}/`,
+      `${process.env.BACKEND_API}/shifts/v1/get-my-shifts/${employeeId}/`,
       { next: { revalidate: 30 } }
     );
     const data = await res.json();

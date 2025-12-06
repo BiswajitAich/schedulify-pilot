@@ -4,7 +4,7 @@ export async function POST(req: NextRequest) {
   try {
     const { id, date, start_time, end_time, created_by } = await req.json();
     const res = await fetch(
-      `${process.env.BACKEND_API}shifts/v1/add-employee-shifts/`,
+      `${process.env.BACKEND_API}/shifts/v1/add-employee-shifts/`,
       {
         method: "POST",
         headers: {

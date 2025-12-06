@@ -45,7 +45,7 @@ export const signup = async (data: FormData): Promise<ActionResult> => {
     const password = data.get("password")?.toString() || "";
 
     console.log("Signup data send!");
-    const res = await fetch(`${process.env.BACKEND_API}auth/v1/signup`, {
+    const res = await fetch(`${process.env.BACKEND_API}/auth/v1/signup`, {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
@@ -88,7 +88,7 @@ export const login = async (
   try {
     console.log("login data send !");
 
-    const res = await fetch(`${process.env.BACKEND_API}auth/v1/login`, {
+    const res = await fetch(`${process.env.BACKEND_API}/auth/v1/login`, {
       method: "POST",
       headers: {
         "Content-Type": "application/json",

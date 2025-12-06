@@ -3,7 +3,7 @@ import { NextResponse } from "next/server";
 export async function GET() {
   try {
     const res = await fetch(
-      `${process.env.BACKEND_API}shifts/v1/get-all-shifts/`,
+      `${process.env.BACKEND_API}/shifts/v1/get-all-shifts/`,
       {
         method: "GET",
         headers: { "Content-Type": "application/json" },
