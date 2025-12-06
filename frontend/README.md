@@ -11,26 +11,79 @@ This frontend provides a clean and responsive dashboard for:
 ## 📁 Project Structure
 
 ```
-frontend/
-│── app/
-│   ├── api/
-│   │   ├── getAllShifts/
-│   │   ├── getMyShifts/
-│   │   ├── addShift/
-│   │   ├── deleteUser/
-│   │   └── getExtraInfo/
-│   ├── dashboard/
-│   │   ...
-│   ├── styles/
-│   │   └── DashBoard.module.css
-│   │   ...
-│   └── _utils/
-│       └── user-contextProvider.tsx
-│       ...
-│
-├── public/
-├── package.json
-└── tsconfig.json
+Directory structure:
+└── frontend/
+    ├── README.md
+    ├── eslint.config.mjs
+    ├── next.config.ts
+    ├── package.json
+    ├── proxy.ts
+    ├── tsconfig.json
+    └── app/
+        ├── globals.css
+        ├── layout.tsx
+        ├── page.module.css
+        ├── page.tsx
+        ├── types.ts
+        ├── (home)/
+        │   ├── home.module.css
+        │   ├── layout.tsx
+        │   ├── add-employee/
+        │   │   ├── addEmployee.module.css
+        │   │   └── page.tsx
+        │   ├── add-shifts/
+        │   │   └── page.tsx
+        │   ├── home/
+        │   │   ├── HomePage.module.css
+        │   │   └── page.tsx
+        │   └── profile/
+        │       ├── page.tsx
+        │       └── Profile.module.css
+        ├── _components/
+        │   ├── AdminShifts.tsx
+        │   ├── Dashboard.tsx
+        │   ├── EmployeeShifts.tsx
+        │   ├── Footer.tsx
+        │   ├── Header.tsx
+        │   ├── Profile.tsx
+        │   └── Sidebar.tsx
+        ├── _utils/
+        │   ├── cookie.ts
+        │   └── user-contextProvider.tsx
+        ├── api/
+        │   ├── addEmployee/
+        │   │   └── route.ts
+        │   ├── addEmployeeShift/
+        │   │   └── route.ts
+        │   ├── deleteUser/
+        │   │   └── route.ts
+        │   ├── getAllShifts/
+        │   │   └── route.ts
+        │   ├── getEmployeeList/
+        │   │   └── route.ts
+        │   ├── getExtraInfo/
+        │   │   └── route.ts
+        │   ├── getMyShifts/
+        │   │   └── route.ts
+        │   └── getUser/
+        │       └── route.ts
+        ├── auth/
+        │   ├── authAction.ts
+        │   ├── page.tsx
+        │   ├── _authComponents/
+        │   │   ├── Login.tsx
+        │   │   └── Signup.tsx
+        │   └── styles/
+        │       ├── auth.module.css
+        │       ├── login.module.css
+        │       └── signup.module.css
+        └── styles/
+            ├── DashBoard.module.css
+            ├── Footer.module.css
+            ├── Header.module.css
+            ├── Profile.module.css
+            └── Sidebar.module.css
+
 ```
 
 ---

@@ -14,21 +14,23 @@ Handles:
 ## 🧱 Project Structure
 
 ```
-backend/
-│── app/
-│   ├── main.py
-│   ├── db/
-│   │   ├── connections.py
-│   │   ...
-│   ├── routes/
-│   │   ├── users.py
-│   │   ├── shifts.py
-│   │   └── auth.py
-│   ├── types.py
-│   └── fun.py
-│
-└── README.md
-...
+Directory structure:
+└── backend/
+    ├── README.md
+    ├── main.py
+    ├── pyproject.toml
+    ├── .python-version
+    └── app/
+        ├── fun.py
+        ├── types.py
+        ├── db/
+        │   ├── connections.py
+        │   └── init_db.py
+        └── routers/
+            ├── auth.py
+            ├── shifts.py
+            └── users.py
+
 ```
 
 ---

@@ -70,8 +70,7 @@ Provides:
 │   ├── db/
 │   └── types.py
 │
-├── README.md
-└── docker-compose.yml (optional)
+└── README.md
 ```
 
 ---
